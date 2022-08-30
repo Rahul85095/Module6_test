@@ -48,7 +48,7 @@
         valid=false;
         document.getElementsByName('Module')[0].classList.remove('hidden');
     }
-    if(!valid){
+    if(valid){
         confirm('Your details have been saved successfully!')
     }
    }
