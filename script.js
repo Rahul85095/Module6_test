@@ -1,5 +1,6 @@
 
    let submit= document.getElementById('submit')
+   
 //    submit.onClick(()=>{
 //     if(validateForm()){
 
@@ -9,7 +10,12 @@
 //     }
 
 //    })
-  function validateForm(){
+function validateForm(){
+   
+    var err=document.getElementsByClassName('validationErr').length;
+    for(let i=0;i<err;i++){
+        document.getElementsByClassName('validationErr')[i].classList.add('hidden')
+    }
     
     var valid=true;
    let fname= document.getElementById('fname').value;
@@ -21,15 +27,15 @@
     if(fname.length<3){
         valid=false;
         document.getElementsByName('fname')[0].classList.remove('hidden');
-
     }
-   
+    if(fname.length>3){
+        valid==true;
+        document.getElementsByName('fname')[0].classList.add('hidden');
+    }
    if(lname.length<3){
         valid=false;
         document.getElementsByName('lname')[0].classList.remove('hidden');
-
     }
-    
    if( ! email.match(/^(.+)@(.+)$/)){
         valid=false;
         document.getElementsByName('email')[0].classList.remove('hidden');
