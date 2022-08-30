@@ -1,0 +1,61 @@
+@media screen and (max-width: 480px) {
+    .col{
+        width: 100%;
+        height: 70px;
+    }
+}
+@media screen and (min-width: 485px) {
+    .col{
+        width: 50%;
+        float: left;
+        height: 70px;
+    }
+    .regBody.row{
+        margin: 10px;
+    }
+}
+.header{
+    background-color: gray;
+    text-align: center;
+}
+.regBody{
+
+}
+.hidden{
+    display: none;
+}
+.regPage{
+    max-width: 800px;
+    margin: auto;
+    
+}
+.col label,.col input{
+    
+    display:flex;
+}
+.col input{
+    width: 90%;
+    height: 26px;
+}
+.col select{
+    width: 90%;
+    height: 30px;
+}
+.validationErr{
+    color: red;
+    font-size: smaller;
+}
+.width80{
+    width:80%;
+}
+.hidden{
+    display: none;
+}
+#submit{
+    color: white;
+    border-radius: 10%;
+    background-color: black;
+    width: 100px;
+    height: 30px;
+
+}
